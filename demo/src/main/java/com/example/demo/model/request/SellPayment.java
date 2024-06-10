@@ -11,4 +11,5 @@ public class SellPayment {
     int customerID;
     String description;
     String transactionID;
+    int transactionMoney;
 }

@@ -12,6 +12,7 @@ import java.time.LocalDate;
 public class TransactionModel {
     int customerID;
     int transactionMoney;
+    int count;
     String description;
     String stockname;
 }

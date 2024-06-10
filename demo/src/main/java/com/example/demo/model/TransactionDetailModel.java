@@ -16,6 +16,7 @@ public class TransactionDetailModel {
     int transactionMoney;
     String description;
     int status;
+    int count;
     Date transactionDate;
     String approveBy;
     String stockname;

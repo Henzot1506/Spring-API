@@ -18,11 +18,11 @@ public interface TransactionMapper {
             """)
     int depositMoney(DepositMoney depositMoney);
     @Select(value = """
-           CALL buy_payment(#{customerID},#{transactionMoney},#{description},#{stockname});
+           CALL buy_payment(#{customerID},#{count},#{transactionMoney},#{description},#{stockname});
             """)
     int buyPayment(TransactionModel transactionModel);
     @Select(value = """
-           CALL sell_payment(#{customerID},#{description},#{transactionID});
+           CALL sell_payment(#{customerID},#{description},#{transactionID},#{transactionMoney});
             """)
     int sellPayment(SellPayment sellPayment);
     @Select(value = """
